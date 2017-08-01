@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     tools:context="m5.gitproject.MainActivity">
 
-    <TextView
+    <fragment
+        android:id="@+id/fragment"
+        android:name="m5.gitproject.BlankFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="124dp"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_editor_absoluteY="190dp"
+        tools:layout_editor_absoluteX="120dp" />
 
 </android.support.constraint.ConstraintLayout>
