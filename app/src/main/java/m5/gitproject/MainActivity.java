@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
      Toast t =  new Toast(this);
         t.setDuration(Toast.LENGTH_LONG);
-        t.setText("Text");
+        t.setText("How are you");
         t.show();
     }
 }
