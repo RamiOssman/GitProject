@@ -65,12 +65,12 @@ public class BlankFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v =  inflater.inflate(R.layout.fragment_blank, container, false);
+        final View v =  inflater.inflate(R.layout.fragment_blank, container, false);
         v.findViewById(R.id.button).setOnClickListener(new Button.OnClickListener(){
 
             @Override
             public void onClick(View view) {
-                mListener.onFragmentInteraction();
+                mListener.onFragmentInteraction(v.findViewById(R.id.button));
             }
 
         });
@@ -108,6 +108,6 @@ public class BlankFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onFragmentInteraction();
+        void onFragmentInteraction(View v);
     }
 }
